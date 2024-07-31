@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Upload Invoice PDFs</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 0 auto; padding: 20px; }
+        h1 { color: #333; }
+        form { background: #f9f9f9; padding: 20px; border-radius: 5px; }
+        input[type="file"] { margin-bottom: 10px; }
+        input[type="submit"] { background: #4CAF50; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        input[type="submit"]:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Upload Invoice PDFs</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="files" accept=".pdf" multiple>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
